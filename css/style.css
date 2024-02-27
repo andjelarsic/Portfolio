@@ -1,0 +1,602 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Alegreya Sans SC";
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #7040cb;
+}
+
+body::-webkit-scrollbar {
+  width: 11px;
+  background-color: #161818;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+header {
+  width: 100%;
+}
+header section {
+  background-color: #000;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 25px;
+  border-top: 3px solid #000;
+}
+header section #logo {
+  width: 50%;
+}
+header section #logo img {
+  padding-top: 10px;
+  margin-left: 40px;
+}
+header section nav {
+  width: 50%;
+}
+header section nav ul {
+  padding: 35px 0px;
+  padding-left: 250px;
+  font-size: 25px;
+}
+header section nav ul li {
+  display: inline-block;
+}
+header section nav ul a {
+  color: #c5dfea;
+  font-weight: bold;
+  margin-right: 30px;
+}
+header section nav ul a:hover {
+  color: #7040cb;
+  transition: 0.8s;
+}
+
+main {
+  display: block;
+}
+main #cover {
+  background-image: url("../img/laptop (2).jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 720px;
+  width: 100%;
+}
+main #cover .covercover {
+  height: inherit;
+  width: 100%;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+main #cover .covercover h1 {
+  color: #c5dfea;
+  text-align: center;
+  padding-top: 250px;
+  font-size: 50px;
+  margin-left: -410px;
+  animation-name: text;
+  animation-duration: 3s;
+}
+@keyframes text {
+  0% {
+    transform: translateX(-300px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+main #cover .covercover h1 .span {
+  color: #7040cb;
+}
+main #cover .covercover h3 {
+  color: #c5dfea;
+  font-family: "Pattaya";
+  font-size: 24px;
+  padding-top: 15px;
+  margin-left: 400px;
+}
+main #cover .covercover ul {
+  display: flex;
+  flex-direction: row;
+  margin-left: 950px;
+  padding-top: 30px;
+}
+main #cover .covercover ul li {
+  padding: 10px;
+}
+main #cover .covercover ul li a {
+  color: #c5dfea;
+  border: 2px solid #7040cb;
+  padding: 20px;
+  font-size: 27px;
+  border-radius: 50%;
+}
+main #aboutme {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  background-color: rgba(208, 214, 229, 0.7098039216);
+  padding-bottom: 90px;
+}
+main #aboutme .title h1 {
+  margin: 0px auto;
+  font-size: 40px;
+  text-align: center;
+  padding: 40px 0px;
+}
+main #aboutme .title h1::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 3px;
+  margin: 0 auto;
+  background-color: #7040cb;
+}
+main #aboutme .row {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+main #aboutme .row .slika {
+  width: 45%;
+}
+main #aboutme .row .slika img {
+  max-width: 70%;
+  box-shadow: rgba(70, 10, 182, 0.71) 0px 20px 30px -10px;
+}
+main #aboutme .row .tekst {
+  width: 45%;
+}
+main #aboutme .row .tekst p {
+  font-size: 30px;
+  text-align: center;
+  font-family: "Pattaya";
+  font-weight: lighter;
+}
+main #aboutme .row .tekst .hey {
+  color: #7040cb;
+  font-size: 40px;
+  font-family: "Alegreya Sans SC";
+  font-weight: bold;
+}
+main #aboutme .row .tekst .hey span {
+  color: #7040cb;
+}
+main #aboutme .row .tekst .dugme {
+  padding-top: 40px;
+  text-align: center;
+}
+main #aboutme .row .tekst .dugme a {
+  border: 2px solid #7040cb;
+  padding: 10px 20px;
+  font-family: "Alegreya Sans SC";
+  font-weight: bold;
+  color: #000;
+  font-size: 30px;
+}
+main #aboutme .row .tekst .dugme a:hover {
+  background-color: #000;
+  transition: 0.8s;
+  color: #7040cb;
+}
+main #services {
+  background-color: #000;
+  background-image: url("../img/cover11.jpg");
+  width: 100%;
+  height: 600px;
+  background-attachment: fixed;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: 60%;
+}
+main #services .title h1 {
+  color: #c5dfea;
+  margin: 0px auto;
+  font-size: 40px;
+  text-align: center;
+  padding: 40px 0px;
+}
+main #services .title h1::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 3px;
+  margin: 0 auto;
+  background-color: #7040cb;
+}
+main #services #wrapper {
+  width: 80%;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 50px;
+}
+main #services #wrapper .icon {
+  border: 1px solid #7040cb;
+  padding: 7%;
+}
+main #services #wrapper .icon:hover {
+  background-color: #000;
+  transition: 0.8s;
+  box-shadow: 3px 3px 20px rgba(200, 164, 241, 0.467);
+}
+main #services #wrapper .icon h2 {
+  font-family: "Alegreya Sans SC";
+  color: #c5dfea;
+  font-size: 30px;
+  padding-top: 30px;
+}
+main #services #wrapper .icon I {
+  color: #c5dfea;
+  font-size: 50px;
+  margin-left: 30%;
+}
+main #services #wrapper .icon p {
+  text-align: center;
+  color: #c5dfea;
+}
+main #skills {
+  width: 100%;
+  background-image: url("../img/wavebluee.jpg");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 30%;
+  display: block;
+}
+main #skills .title h1 {
+  color: #000;
+  margin: 0px auto;
+  font-size: 40px;
+  text-align: center;
+  padding: 40px 0px;
+}
+main #skills .title h1::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 3px;
+  margin: 0px auto;
+  background-color: #7040cb;
+}
+main #skills .row {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 20px 0px;
+}
+main #skills .row .skill {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  width: 22%;
+  border-radius: 2px 10px;
+  padding: 15px 30px;
+}
+main #skills .row .skill:hover {
+  transition: 0.8s;
+  box-shadow: 3px 3px 20px rgba(200, 164, 241, 0.467);
+}
+main #skills .row .skill .percent {
+  position: absolute;
+}
+main #skills .row .skill .percent p {
+  font-size: 30px;
+  color: #7040cb;
+  font-weight: bold;
+  font-family: "Pattaya";
+  margin-bottom: 90px;
+}
+main #skills .row .skill img {
+  width: 100%;
+}
+main #skills .row .skill h2 {
+  font-family: "Alegreya Sans SC";
+  margin-top: 40px;
+  padding-bottom: 30px;
+  font-weight: bold;
+}
+main #skills #numbers {
+  width: 100%;
+  background-color: #000;
+  background-image: url("../img/cover11.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-size: 60%;
+  background-position: right bottom;
+  padding: 70px 0px;
+  display: block;
+}
+main #skills #numbers .number {
+  margin: 0px auto;
+  width: 85%;
+}
+main #skills #numbers .number #numberwrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+main #skills #numbers .number #numberwrap .numb {
+  margin-top: 5px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+main #skills #numbers .number #numberwrap .numb h2 {
+  color: #c5dfea;
+  font-size: 34px;
+  margin-top: 8px;
+  font-family: "Pattaya";
+}
+main #skills #numbers .number #numberwrap .numb i {
+  color: #7040cb;
+  font-size: 50px;
+}
+main #skills #numbers .number #numberwrap .numb h3 {
+  font-size: 25px;
+  color: #9ba1a4;
+  font-family: "Alegreya Sans SC";
+}
+main #projects {
+  width: 100%;
+  padding: 80px 0;
+  background-image: url("..//img/wavebluee2.jpg");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: bottom right;
+}
+main #projects .project {
+  width: 80%;
+  margin: 0 auto;
+}
+main #projects .project .title h1 {
+  color: #000;
+  margin: 0px auto;
+  font-size: 40px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+main #projects .project .title h1::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 3px;
+  margin: 0px auto;
+  background-color: #7040cb;
+}
+main #projects .project p {
+  line-height: 1.5;
+  font-size: 27px;
+  text-align: center;
+  font-family: "Pattaya";
+}
+main #projects .project .sites {
+  padding: 70px 0;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px auto;
+}
+main #projects .project .sites figure {
+  width: 45%;
+}
+main #projects .project .sites figure img {
+  width: 100%;
+  box-shadow: rgb(31, 22, 44) 0px 20px 30px -10px;
+  transition: 0.8s ease-in-out;
+}
+main #projects .project .sites figure img:hover {
+  transform: scale(1.1);
+}
+main #projects .project .sites figure figcaption {
+  font-family: "Alegreya Sans SC";
+  color: #000;
+  margin: 0px auto;
+  font-size: 35px;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 15px;
+}
+main #projects .project .sites figure figcaption::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 3px;
+  margin: 0px auto;
+  background-color: #7040cb;
+}
+main #Contact {
+  width: 100%;
+  background-color: #000;
+  padding: 50px 0;
+  background-image: url("../img/cover111.jpg");
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: 55%;
+}
+main #Contact #contactme {
+  width: 100%;
+}
+main #Contact #contactme .title h1 {
+  color: #c5dfea;
+  font-family: "Alegreya Sans SC";
+  margin: 0px auto;
+  font-size: 40px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+main #Contact #contactme .title h1::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 3px;
+  margin: 0px auto;
+  background-color: #7040cb;
+}
+main #Contact #contactme #contactwrap {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+main #Contact #contactme #contactwrap #form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+main #Contact #contactme #contactwrap #form input {
+  border: 2px solid #7040cb;
+  padding: 18px 10px;
+  width: 100%;
+  background-color: #000;
+  margin-bottom: 10px;
+  color: #fff;
+  font-family: "Alegreya Sans SC";
+}
+main #Contact #contactme #contactwrap #form input::-moz-placeholder {
+  font-family: "Alegreya Sans SC";
+  font-weight: bold;
+  padding-left: 5px;
+  font-size: 15px;
+}
+main #Contact #contactme #contactwrap #form input::placeholder {
+  font-family: "Alegreya Sans SC";
+  font-weight: bold;
+  padding-left: 5px;
+  font-size: 15px;
+}
+main #Contact #contactme #contactwrap #form textarea {
+  border: 2px solid #7040cb;
+  padding: 18px 10px;
+  width: 100%;
+  background-color: #000;
+  margin-bottom: 5px;
+  color: #fff;
+  font-family: "Alegreya Sans SC";
+  font-size: 18px;
+}
+main #Contact #contactme #contactwrap #form textarea::-moz-placeholder {
+  font-family: "Alegreya Sans SC";
+  font-weight: bold;
+  font-size: 15px;
+  padding-left: 5px;
+}
+main #Contact #contactme #contactwrap #form textarea::placeholder {
+  font-family: "Alegreya Sans SC";
+  font-weight: bold;
+  font-size: 15px;
+  padding-left: 5px;
+}
+main #Contact #contactme #contactwrap #form button {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: #000;
+  border: 2px solid #7040cb;
+  color: #c5dfea;
+  padding: 15px 46px;
+  margin: 10px auto;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: "Alegreya Sans SC";
+  letter-spacing: 1px;
+}
+main #Contact #contactme #contactwrap #form button:hover {
+  background-color: #7040cb;
+  transition: 0.8s;
+}
+
+footer {
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  background-color: #000;
+  border-top: 1px solid #7040cb;
+}
+footer #footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+footer #footer .links {
+  padding-bottom: 8px;
+}
+footer #footer .links ul li {
+  display: inline-block;
+  padding: 10px;
+}
+footer #footer .links ul li a {
+  padding-left: 10px;
+}
+footer #footer .links ul li a i {
+  color: #c3c9cc;
+  font-size: 20px;
+  border-radius: 50%;
+  padding: 15px;
+  background-color: #161818;
+}
+footer #footer .links ul li a i:hover {
+  color: #7040cb;
+  transition: 0.8s;
+}
+footer #footer .copyright {
+  font-size: 15px;
+  padding: 6px 0;
+  color: #c3c9cc;
+  font-family: "Pattaya";
+  margin-top: 15px;
+}
+footer #footer .nav ul {
+  margin-left: 52px;
+}
+footer #footer .nav ul li {
+  display: inline;
+}
+footer #footer .nav ul li a {
+  color: #c3c9cc;
+  font-weight: bold;
+  margin-right: 30px;
+  padding-left: 50px;
+  padding: 0px 20px;
+  font-family: "Alegreya Sans SC";
+  font-size: 17px;
+}
+footer #footer .nav ul li a:hover {
+  color: #7040cb;
+  transition: 0.8s;
+}/*# sourceMappingURL=style.css.map */
