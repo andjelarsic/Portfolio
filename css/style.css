@@ -41,14 +41,14 @@ header section {
   border-top: 3px solid #000;
 }
 header section #logo {
-  width: 50%;
+  width: 60%;
 }
 header section #logo img {
   padding-top: 10px;
   margin-left: 40px;
 }
 header section nav {
-  width: 50%;
+  width: 40%;
 }
 header section nav ul {
   padding: 35px 0px;
