@@ -472,7 +472,7 @@ main #Contact #contactme #contactwrap {
   align-items: center;
 }
 main #Contact #contactme #contactwrap #form {
-  width: 100%;
+  width: 55%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
